@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>โครงการอนุรักษ์ - Conservation Projects</title>
+    <style>
+        /* ตั้งค่าพื้นหลังรวมของหน้า */
+        body {
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            /* เว้นที่ด้านบนให้เมนูที่ Fixed ไว้ไม่บังเนื้อหา */
+            padding-top: 180px; 
+        }
+
+        /* ส่วนหัวที่ล็อคค้างด้านบน */
+        .main-header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* จัดระเบียบโลโก้และชื่อเว็บ */
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+        }
+
+        .logo { width: 250px; height: auto; }
+        .logo1 { width: 150px; height: auto; }
+
+        h1 {
+            font-size: 32px;
+            margin: 0;
+            text-align: center;
+            color: #1a1a1a;
+        }
+
+        /* แถบเมนูสีดำ */
+        nav {
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            padding: 15px 30px;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 18px;
+            transition: 0.4s;
+        }
+
+        nav a:hover {
+            background-color: #223a0f; 
+        }
+
+        /* ปรับแต่งภาพสไตล์ Panorama */
+        .panorama-img {
+            width: 100%;
+            height: 380px; /* ความสูงหน้ากว้างโชว์ภาพกิจกรรม */
+            object-fit: cover;
+            display: block;
+        }
+
+        h2 {
+            font-size: 35px;
+            text-align: center;
+            margin: 45px 0 25px;
+            color: #223a0f;
+        }
+
+        /* ปุ่มหมวดหมู่แบบโค้งมน (Capsule Style) */
+        .cs1 {
+            display: inline-block;
+            background-color: #000000;
+            padding: 15px 35px;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 18px;
+            transition: 0.4s;
+            border-radius: 50px; /* ทรงแคปซูล */
+            margin: 10px;
+        }
+
+        .cs1:hover {
+            background-color: #223a0f;
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        center {
+            padding-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <img class="logo" src="/IMG.LOGO/IMG_7462 - แก้ไขแล้ว.png" alt="Logo Left">
+            <h1>WILDLIFE AND BOTANICAL CONSERVATION OF THAILAND</h1> 
+            <img class="logo1" src="/IMG.LOGO/thailand-152711_1280.png" alt="Logo Right"> 
+        </div>
+
+        <nav>
+            <a href="/index.html">หน้าแรก</a>
+            <a href="/HOTM/WildlifeConservation.html">สัตว์ป่าสงวน</a>
+            <a href="/HOTM/BotanicalResearch.html">พรรณไม้หายาก </a>
+            <a href="/HOTM/ProtectedAreas.html">พื้นที่เขตอนุรักษ์ </a>
+            <a href="/HOTM/ConservationProjects.html">โครงการอนุรักษ์ </a>
+            <a href="/HOTM/ContactUs.html">ติดต่อเรา </a>
+        </nav>
+    </header>
+
+    <img src="/IMG.LOGO/PROJECT_FOREST.jpg" class="panorama-img">
+    <h2>"โครงการฟื้นฟูระบบนิเวศ" (Ecosystem Restoration)</h2>
+    <center>
+        <a class="cs1" href="#">โครงการปลูกป่าต้นน้ำ</a>
+        <a class="cs1" href="#">ฟื้นฟูป่าชายเลน</a>
+        <a class="cs1" href="#">ธนาคารเมล็ดพันธุ์ไทย</a>
+    </center>
+
+    <img src="/IMG.LOGO/PROJECT_BIRDS.jpg" class="panorama-img">
+    <h2>"โครงการอนุรักษ์สัตว์ป่า" (Wildlife Conservation)</h2>
+    <center>
+        <a class="cs1" href="#">คืนนกเงือกสู่ป่า</a>
+        <a class="cs1" href="#">อนุรักษ์นกอพยพ</a>
+        <a class="cs1" href="#">โครงการรังเทียม</a>
+    </center>
+
+    <img src="/IMG.LOGO/PROJECT_COMMUNITY.jpg" class="panorama-img">
+    <h2>"การมีส่วนร่วม" (Community Engagement)</h2>
+    <center>
+        <a class="cs1" href="#">อาสาสมัครนับนก</a>
+        <a class="cs1" href="#">แจ้งเหตุบุกรุกป่า</a>
+        <a class="cs1" href="#">ร่วมสนับสนุนโครงการ</a>
+    </center>
+    
+</body>
+</html>

@@ -1,0 +1,100 @@
+/* --- ส่วนของ Header ที่ค้างด้านบน (ใช้ได้ทุกหน้า) --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 180px; /* เว้นที่ให้เมนูที่ Fixed ไว้ */
+}
+
+.main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.logo { width: 250px; height: auto; }
+.logo1 { width: 150px; height: auto; }
+h1 { font-size: 32px; margin: 0; text-align: center; }
+
+/* --- แถบเมนู --- */
+nav {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+nav a:hover {
+    background-color: #223a0f; 
+}
+
+/* --- ปุ่มหมวดหมู่ที่ต้องการให้โค้งมน --- */
+.cs1 {
+    display: inline-block;
+    background-color: #000000;
+    padding: 15px 40px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: 0.4s;
+    border-radius: 50px; /* คำสั่งทำให้มุมโค้ง */
+    margin: 10px;
+}
+
+.cs1:hover {
+    background-color: #223a0f;
+    transform: scale(1.05);
+}
+
+/* --- รูปภาพ Hero --- */
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+h2 {
+            font-size: 35px;
+            text-align: center;
+            margin: 45px 0 25px;
+            color: #223a0f;
+        }
+
+        /* ปุ่มหมวดหมู่แบบโค้งมน (Capsule Style) */
+        .cs1 {
+            display: inline-block;
+            background-color: #000000;
+            padding: 15px 35px;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 18px;
+            transition: 0.4s;
+            border-radius: 50px; /* โค้งมนแบบที่คุณชอบ */
+            margin: 10px;
+        }
+
+        .cs1:hover {
+            background-color: #223a0f;
+            transform: scale(1.05); /* ขยายขนาดเล็กน้อยตอนชี้ */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        center {
+            padding-bottom: 50px;
+        }

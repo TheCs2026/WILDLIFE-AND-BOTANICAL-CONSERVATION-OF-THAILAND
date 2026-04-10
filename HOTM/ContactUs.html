@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>ติดต่อเรา - WILDLIFE AND BOTANICAL CONSERVATION</title>
+    
+    <style>
+        /* CSS เฉพาะสำหรับหน้านี้ */
+        .contact-section {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .contact-card {
+            border: 2px solid #000;
+            padding: 30px 20px;
+            text-decoration: none;
+            color: #000;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            /* เพิ่มมุมโค้งให้เข้ากับธีมเว็บ */
+            border-radius: 20px; 
+        }
+
+        /* Hover Effect */
+        .contact-card:hover {
+            background-color: #223a0f; /* เปลี่ยนเป็นสีเขียวเข้มตามธีมเว็บ */
+            border-color: #223a0f;
+            color: #fff;
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .contact-card i {
+            font-size: 45px;
+        }
+
+        .contact-card span {
+            font-weight: bold;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-card p {
+            margin: 0;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <img class="logo" src="/IMG.LOGO/IMG_7462 - แก้ไขแล้ว.png" alt="Logo Left">
+            <h1>WILDLIFE AND BOTANICAL CONSERVATION OF THAILAND</h1> 
+            <img class="logo1" src="/IMG.LOGO/thailand-152711_1280.png" alt="Logo Right"> 
+        </div>
+
+        <nav>
+            <a href="/index.html">หน้าแรก</a>
+            <a href="/HOTM/WildlifeConservation.html">สัตว์ป่าสงวน</a>
+            <a href="/HOTM/BotanicalResearch.html">พรรณไม้หายาก </a>
+            <a href="/HOTM/ProtectedAreas.html">พื้นที่เขตอนุรักษ์ </a>
+            <a href="/HOTM/ConservationProjects.html">โครงการอนุรักษ์ </a>
+            <a href="/HOTM/ContactUs.html">ติดต่อเรา </a>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <h2 style="font-size: 32px; border-bottom: 3px solid #223a0f; display: inline-block; padding-bottom: 10px; color: #223a0f;">ช่องทางการติดต่อเรา</h2>
+        
+        <div class="contact-grid">
+            <a href="#" class="contact-card">
+                <i class="fab fa-facebook-f"></i>
+                <span>Facebook</span>
+                <p>Nawakorn Samkaew</p>
+            </a>
+
+            <a href="#" class="contact-card">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+                <p>@mac_nawakorn</p>
+            </a>
+
+            <a href="https://www.tiktok.com/@ViewMonPin" target="_blank" class="contact-card">
+                <i class="fab fa-tiktok"></i>
+                <span>TikTok</span>
+                <p>ViewMonPin</p>
+            </a>
+
+            <a href="#" class="contact-card">
+                <i class="fab fa-line"></i>
+                <span>Line ID</span>
+                <p>mac_nawakorn</p>
+            </a>
+
+            <a href="mailto:nawakorn.sam@mail.com" class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+                <p>nawakorn.sam@mail.com</p>
+            </a>
+        </div>
+    </section>
+
+</body>
+</html>
